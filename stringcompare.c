@@ -22,7 +22,7 @@ int stringComparer(char a[],char b[],int c,int d)
 int main(){
 	char a[100];
 	printf("Enter the first string:");
-	scanf("%s",a);
+	gets(a);
 	int lengthfirststring=0;
 	for(int i=0;a[i]!='\0';i++)
 	{
@@ -30,7 +30,7 @@ int main(){
 	}
 	char b[100];
 	printf("Enter the second string:");
-	scanf("%s",b);
+	gets(b);
 	int lengthsecondstring=0;
 	for(int i=0;a[i]!='\0';i++)
 	{
