@@ -6,12 +6,11 @@ void reverse(char a[],int n){
 	ptr=a;
 	ctr=&a[n-1];
 	char t;
-	for(int i=0;i<n/2;i++)
+	for(ptr=a;ptr<&a[n/2];ptr++)
 	{
 		t=*(ptr);
 		*(ptr)=*(ctr);
 		*(ctr)=t;
-		ptr++;
 		ctr--;
 	}
 }
